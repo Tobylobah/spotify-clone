@@ -1,0 +1,332 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: rgb(0, 0, 0);
+  margin:10px;
+}
+.container{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+}
+.home-section{
+  background-color: #121212;
+  padding:20px 28px;
+  border-radius: 10px;
+  position: fixed;
+  z-index:1000;
+  width:22.3%;
+  
+}
+.home , .search{
+  display:flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+}
+.home{
+  margin-bottom: 24px;
+}
+.fa-home{
+  color:white;
+  font-size: 20px;
+  padding-right: 22px;
+}
+.fa-search{
+  color:#b3b3b3;
+  font-size: 20px;
+  padding-right: 22px;
+}
+.home p{
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.search p{
+  font-size: 16px;
+  color: #b3b3b3;
+  font-weight: 600;
+}
+.library-section{
+  background-color: #121212;
+  padding:20px 28px;
+  border-radius: 10px;
+  position: fixed;
+  z-index:1000;
+  width:22.3%;
+  top:122px;
+  
+}
+.your-library-box{
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+.library-text{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+.library-text p {
+  color:#b3b3b3;
+  font-size: 16px;
+  font-weight: 600;
+}
+.library-text .library-img {
+  color:#b3b3b3;
+  padding-right: 20px;
+  font-size: 24px;
+}
+.library-icons .add{
+  color:#b3b3b3;
+  font-size: 24px;
+}
+.library-icons .arrow-forward{
+  color:#b3b3b3;
+  font-size: 24px;
+  padding-left: 10px; 
+}
+
+.option-box{
+  width:22%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-top: 23px;
+  position: fixed;
+  z-index:1000;
+  width:22%;
+  top:182px;
+  left:10px;
+
+  
+}
+.option-box p{
+  color:white;
+  font-size: 14px;
+  background-color: #ffffff12;
+  padding:5px 12px;
+  border-radius: 32px;
+}
+.content {
+  height: 100%; /* Adjust the max height as needed */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  margin-top: 220px;
+  width:310px;
+  
+}
+.last-box{
+  background-color:#121212;
+  padding:10px 28px;
+  border-radius: 10px;
+  position: sticky;
+}
+.content::-webkit-scrollbar {
+  width: 5px; 
+  /* Set the scrollbar width */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color:red/* Thumb color */
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: pink; /* Track color */
+}
+
+.search-recent{
+  display:flex;
+  padding: 20px 0;
+  justify-content: space-between;
+
+}
+.search-recent .fa-search{
+  font-size: 16px;
+}
+.search-recent div{
+  display: flex;
+}
+.search-recent p{
+  color:#b3b3b3;
+  padding-right: 10px;
+}
+.search-recent .fa-sort-desc{
+  color:#b3b3b3;
+}
+.artists{
+  display: flex;
+  margin-top: 13px;
+}
+.artist-img-default img{
+  width:50px;
+  border-radius: 5px;
+}
+.artist-img img{
+  width:50px;
+  border-radius: 25px;
+}
+.artist-name{
+  display:block;
+  padding-bottom: 8px;
+}
+.artist-name-title{
+  padding-left: 12px;
+}
+.artist-name-title .artist-name{
+  color:white;
+}
+.artist-name-title .artist-title .fa-thumb-tack{
+  color:#1ed760;
+}
+.artist-title span{
+  color:#b3b3b3;
+  font-size: 14px;
+}
+.right-section{
+  background-color: #121212;
+  padding:20px 18px;
+  border-radius: 10px;
+  margin: 0 10px;;
+}
+.nav{
+  display:grid;
+  grid-template-columns: 50% 1fr;
+  position: fixed;
+  top:0px;
+  padding:20px;
+  left:320px;
+  width:75%;
+  border-radius: 10px;
+  background-color:#121212;
+  z-index: 1000;
+  /* margin-top: 20px; it works with this , we just need it to scroll inside the nav bar not inside the windoww */
+ 
+}
+.prev-next{
+  display:flex;
+  flex-direction: row;
+  flex-shrink:0;
+}
+.fa-angle-left , .fa-angle-right{
+  font-size: 19px;
+  background-color: #000;
+  color:white;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding:7px 10px;  
+}
+.explore{
+  display:flex;
+  flex-shrink:0;
+  align-items: center;
+}
+.explore-btn{
+  background-color:white;
+  color:black;
+  padding:10px 9px;
+  border-radius:20px;
+  border:1px solid white;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.fa-download{
+  padding-right:4px;
+}
+.install-btn{
+  color:white;
+  background-color: #0a0a0a;
+  border:1px solid #0a0a0a;
+  padding:10px 9px;
+  border-radius:20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.fa-bell-o , .person-outline{
+  color:white;
+  background-color: #0a0a0a;
+  font-size: 19px;
+  margin-right: 10px;
+  padding:9px 10px;
+  border-radius: 50%;
+}
+section h1{
+  color:white;
+  padding: 15px 0px;
+  font-size: 28px;
+  margin-top: 40px;
+}
+.group-collection{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.group-collection .collection{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30% 70%;
+  background-color:#1a1a1a;
+  margin-bottom: 20px;
+  align-items: center;
+  font-weight: 500;
+  height:70px;
+  border-radius: 5px;
+ 
+}
+.group-collection .collection img{
+  width:70px;
+  border-radius:10px 0 0 10px;
+}
+.group-collection .collection p{
+  color:white;
+  font-weight: 500;
+  padding-left:20px;
+}
+.made-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:10px;
+}
+.made-box{
+  flex-direction: column;
+  padding: 15px 15px 15px 15px;
+  background-color: #1a1a1a;
+  border-radius: 5px;/*#242424 #2a2a2a */
+}
+.made-box img{
+  width:100%;
+  border-radius: 5px;
+}
+.made-box h4{
+  color:white;
+  padding: 8px 0px;
+}
+.made-box p{
+  color:#b3b3b3;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.made{
+  display:flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.made p{
+  color:#b3b3b3;
+}
+.nav.scrolled {
+  background-color:#121212;
+  top:0;
+  right:-49px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px; /* Change to your desired background color */
+}
