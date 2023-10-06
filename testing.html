@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Spotify-Clone</title>
+  <link rel="stylesheet" href="testing.css">
   <script src="https://kit.fontawesome.com/deeb7dd738.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,6 @@
 </head>
 
 <body>
-  <!--   
-  
-
-  <i class="fa fa-sort-desc" aria-hidden="true"></i>
--->
   <div class="container">
     <div class="left-section">
       <div class="home-section">
@@ -123,7 +118,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Podcast &#46; GDSC UNILORIN</span>
+                  <span>Podcastggg &#46; GDSC UNILORIN</span>
                 </div>
               </div>
             </div>
@@ -161,7 +156,7 @@
               </div>
               <div class="artist-name-title">
                 <div class="artist-name">
-                  NF
+                  NFgtttttttt
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
@@ -179,7 +174,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Podcast &#46; GDSC UNILORIN</span>
+                  <span>Podcast ttttt&#46; GDSC UNILORIN</span>
                 </div>
               </div>
             </div>
@@ -199,6 +194,9 @@
             </div>
 
           </div>
+        </div>
+        <div class="custom-scrollbar">
+
         </div>
       </div>
     </div>
@@ -376,18 +374,21 @@
     //     nav.classList.remove('scrolled');
     //   }
     // });
-    const container = document.querySelector('.container');
-    const content = document.querySelector('.content');
+        // script.js
+const fixedSection = document.querySelector('.last-box');
+const customScrollbar = document.querySelector('.custom-scrollbar');
 
-    // Handle window scroll event
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > container.offsetTop) {
-        content.style.position = 'fixed';
-        content.style.top = 0;
-      } else {
-        content.style.position = 'static';
-      }
-    });
+customScrollbar.addEventListener('scroll', () => {
+    const scrollPercentage = customScrollbar.scrollTop / (customScrollbar.scrollHeight - customScrollbar.clientHeight);
+    const scrollAmount = scrollPercentage * (fixedSection.scrollHeight - fixedSection.clientHeight);
+    fixedSection.scrollTop = scrollAmount;
+});
+
+fixedSection.addEventListener('scroll', () => {
+    const scrollPercentage = fixedSection.scrollTop / (fixedSection.scrollHeight - fixedSection.clientHeight);
+    const scrollAmount = scrollPercentage * (customScrollbar.scrollHeight - customScrollbar.clientHeight);
+    customScrollbar.scrollTop = scrollAmount;
+});
 
   </script>
 </body>
