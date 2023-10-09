@@ -40,6 +40,12 @@
           <p>Playlist</p>
           <p>Artists</p>
           <p>Podcasts & Shows</p>
+          <p>Playlist</p>
+          <p>Artists</p>
+          <p>Podcasts & Shows</p>
+          <p>Playlist</p>
+          <p>Artists</p>
+          <p>Podcasts & Shows</p>
         </div>
       </div>
       <div class="content">
@@ -76,7 +82,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Saved and downloaded episodes</span>
+                  <span>Saved</span>
                 </div>
               </div>
             </div>
@@ -118,7 +124,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Podcastggg &#46; GDSC UNILORIN</span>
+                  <span>Podcast &#46; GDSC UNI</span>
                 </div>
               </div>
             </div>
@@ -156,7 +162,7 @@
               </div>
               <div class="artist-name-title">
                 <div class="artist-name">
-                  NFgtttttttt
+                  NF
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
@@ -174,7 +180,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Podcast ttttt&#46; GDSC UNILORIN</span>
+                  <span>Podcast&#46; GDSC UNI<span>
                 </div>
               </div>
             </div>
@@ -188,7 +194,7 @@
                 </div>
                 <div class="artist-title">
                   <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
-                  <span>Playlist &#46; 103  hhhhhhhhhhhhsongs</span>
+                  <span>Playlist &#46; 103 songs</span>
                 </div>
               </div>
             </div>
@@ -208,8 +214,12 @@
           </div>
           <div class="next-icon">
             <i class="fa fa-angle-right" aria-hidden="true"></i>
-
           </div>
+        </div>
+        <div class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="explore">
           <button class="explore-btn">Explore Premium</button>
@@ -247,6 +257,8 @@
           <p>NF</p>
         </div>
       </section>
+      
+      <div class="scroll-container">
       <section class="made-section">
         <div class="made">
           <h1>Made For Bello Lateefat</h1>
@@ -283,8 +295,7 @@
           </div>
         </div>
       </section>
-
-
+      </div>
       <section class="made-section">
         <div class="made">
           <h1>Jump back in</h1>
@@ -375,6 +386,17 @@
     //   }
     // });
         // script.js
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.querySelector('.navbar-toggle');
+        const navLinks = document.querySelector('.explore');
+
+        toggleButton.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+
+
 const fixedSection = document.querySelector('.last-box');
 const customScrollbar = document.querySelector('.custom-scrollbar');
 
