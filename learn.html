@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learn.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Hi I am Toby. It has been over 6 months I coded last.My fingers feel so numbed , I am typing so slow.
+        I feel good to be back.
+    </h3>
+    <h2>Programming</h2>
+    <h4>It is sub-divided into two or maybe three. We have the frontend , backend , fullstack development.</h4>
+    <h3>Frontend development: this is how a webpage looks like. It deals with client side</h3>
+    <h3>Backend Development: this is how a webpage works. It deals with server side.</h3>
+    <h3>What I am working with right now is known as HTML[hyper text markup language]. To start an html doc, 
+        it must start with [doctype html]. This indicates that this is HTML 5.0. We have a format at which an html
+        must follow[a boiler plate]. A shorcut to this is typing [!] and press enter. 
+    </h3>
+   <marquee><h3>Html codes are not case sensitive.</h3></marquee>.
+   <h2>HTML Attributes</h2>
+   <h4>We have  the absolute url and relative url for the src used in an image tag.
+    Examples: absolute url: src="https://www.w3schools/img/girl.png"
+    relative url: src="images/icons/arrow.jpg"
+   </h4>
+   <h4>we also have the lang attribute in our html boiler plate. html lang="en"</h4>
+   <h4>We also have the title attribute , it gives a default sqaure box and tells us more about the element
+    at which the title placed.
+   </h4>
+   <p title="omg">oh</p>
+   <h4>we also have the href attribute in the a tag... a href=""</h4>
+   <h3>Some html elments example.</h3>
+   <p>hr...horizontal rule</p><hr>
+   <p>br...line break</p><br>
+   <p>pre...it has a fixed width and default font which is usually courier.</p>
+   <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum mollitia quod aperiam tempora,
+     in, nostrum nisi veniam,
+     similique eius reprehenderit voluptatem. Fugiat quo modi dicta deserunt aut nostrum delectus ut!</pre>
+     <p>bold....<b>i am bold</b></p>
+     <p>strong...<strong>i am strong</strong></p>
+     <p>italic...<i>i am italized</i></p>
+     <p>emphasis...<em>i am an empahsized text</em></p>
+     <p>mark...<mark>i am a marked text</mark></p>
+     <p>del...<del>i am a deleted text</del></p>
+     <p>ins...<ins>I am an inserted text</ins></p>
+     <p>sub...<sub>i look subscripted , dont i?</sub></p>
+     <p>sup...<sup>i am a superscripted text.</sup></p>
+     <p><q>quotation marks:<q>i am a quoted text</q></p>
+     <p><abbr>abbreviations , the full meaning of the abbreviation or accronym is giving by adding
+        a title attribute. <abbr title="worlf health organization">WHO</abbr></p>
+     <p>address...usually italic , a default line break in acordance to how it is written in the text editor.
+        <address>D21 Alabameta street,
+            osogbo,
+            osun state.
+        </address>
+     </p>
+     <p>cite...the word in a cite tag is usually italic.
+        <cite>the scream</cite> by edward thomas
+     </p>
+     <p>bdo..bi-directonal override. if a text is: Hi I am Toby. It has been over 6 months. 
+        if bdo is used , it becomes ,<bdo>Hi I am Toby. It has been over 6 months</bdo></p>
+        <p>You can change the direction of text of a bdo using thr dir="" attribute. <bdo dir="rtl">Hi I am Toby. It has been over 6 months</bdo>    </p>
+
+     <blockquote cite=""[nnnnnn iuynnnnnnnn]>it defines a section that is quoted from another source</blockquote>
+<h3>Links in html</h3>
+<p>a visited link is underlined and purple</p>
+<p>a unvisited link is underlined and blue</p>
+<p>an active link is underlined and red</p>
+<h3>Target Attributes</h3>
+<p>a target attribute of self : target="_self" , it opens the new link in the same tab/window as it was clicked.
+    <a href="https://www.goggle.com" target="_self">click to get to google</a>
+</p>
+<p>a target attribute of blank : target="_blank" , it opens the new link in a new tab/window.
+    <a href="https://www.goggle.com" target="_blank">click to get to google2</a>
+</p>
+<p>a target attribute of parent : target="_parent" , it opens the new link in the parent frame
+    <a href="https://www.goggle.com" target="_parent">click to get to google3</a>
+</p>
+<p>a target attribute of top : target="_top" , it opens the new link in the full body of the window.
+    <a href="https://www.goggle.com" target="_top">click to get to google4</a>
+</p>
+<h3>Yo , I want to create a link that will togle if it is being hovered , active , visited , unvisited and active</h3>
+<a class="first-link" href="https://www.goggle.com" target="_blank">I am the first link Toby is creating</a>
+<!-- image map shii --><img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+    <area shape="circle" coords="290,480,120,2220" alt="Computer" href="computer.html">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
+  </map>
+<!-- the picture element , to aid flexibility when applying an image   -->
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+  </picture>
+  <!-- you can also use the picture element so the browser can choose from it incase it does not recognize the format -->
+  there is something called table caption 
+  let us create a table.
+<table>
+    <caption><h1>HTML Table</h1></caption>
+    <tr>
+        <th colspan="2">Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td colspan="2">Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+</table>
+list in html
+ul and ol
+list style type:disc.square,none,circle
+<ul id="disc">
+    <li>agabdo</li>
+    <li>iresi</li>
+</ul>
+<ul id="circle">
+    <li>agabdo</li>
+    <li>iresi</li>
+</ul>
+<ul id="none">
+    <li>agabdo</li>
+    <li>iresi</li>
+</ul>
+<ul id="square">
+    <li>agabdo</li>
+    <li>iresi</li>
+</ul>
+The dl tag defines the description list, the dt tag defines the term (name), and the dd tag describes each term:
+<dl>
+  <dt>Anime</dt>  
+  <dd>A jApanese cartoon</dd>
+  <dt>Animation</dt>
+  <dd>a cartoon sha</dd>
+</dl>
+<h3>html iframes</h3>
+<p>remember try kibo notion taught you this , making use of youtube videos.
+    syntax:iframe src="URL">iframe , you can set the hright and width , you can also remove the border as it has a default border and you can also style it.
+    An iframe is used to display a web page within a web page.
+    <h2>Iframe - Target for a Link</h2>
+
+<iframe height="300px" width="100%" src="demo_iframe.html" name="iframe_a"></iframe>
+
+<p><a href="../index.html" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+</p>
+
+
+<kbd>ctrl + s
+</kbd>
+<p>The samp element represents output from a program or computing system:</p>
+
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+Text surrounded by code tags is typically displayed in a monospace font: 
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        The variable could be a variable in a mathematical expression or a variable in programming context
+        Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+        <h3>html entities</h3>
+        Uniform Resource Locator (URL)
+        APIs (Application Programming Interfaces)
+        <h1>HTML FORMS</h1>
+        header, section, footer, aside, nav, main, article, figure {
+            display: block;
+          }
+          <H2>
+            Add New Elements to HTML
+            <p>
+                <script>document.createElement("myHero")</script>
+                <style>
+                myHero {
+                  display: block;
+                  background-color: #dddddd;
+                  padding: 50px;
+                  font-size: 30px;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1>A Heading</h1>
+                <myHero>My Hero Element</myHero>
+                </p>
+          </H2>
+          <h1>css</h1>
+css bg
+
+
+
+
+
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<div class="mixed-border">hafffa</div>
+font awesome icons
+goggle icons
+bootstrap icons
+using an image as an icon when listing.
+you will use the list-style-image tag
+<ul class="list-style-img">
+    <li>girl</li>
+    <li>boy</li>
+    <li>shemale</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+we also have list style position , it can be outside or inside.
+ eg
+ list positionoutsoide
+ <ul class="list-style-post-out">
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eligendi vero quaerat harum quae,Quos eligendi vero quaerat harum quae, autem cupiditate autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eligendi vero quaerat harum quae,Quos eligendi vero quaerat harum quae, autem cupiditate autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eligendi vero quaerat harum quae,Quos eligendi vero quaerat harum quae, autem cupiditate autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+ </ul>
+ list position inside
+ <ul class="list-style-post-in">
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eliQuos eligendi vero quaerat harum quae, autem cupiditategendi vero quaerat harum quae, autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eligQuos eligendi vero quaerat harum quae, autem cupiditateendi vero quaerat harum quae, autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+    <li>Lorem ipsum, us in? Quos eligendi vero quaerat harum quae, autem cupiditate!Quos eliQuos eligendi vero quaerat harum quae, autem cupiditategendi vero quaerat harum quae, autem cupiditateQuos eligendi vero quaerat harum quae, autem cupiditate</li>
+ </ul>
+list style shorthand is the type eg disc , quare , the position eg outside or inside , the image
+<h3>more on tables using css</h3>
+<table>
+    <caption>html table</caption>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Berglunds snabbkop</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+    <tr>
+        <td>Ernst Hnadel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennet</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Koniglich Essen</td>
+        <td>Phillip Cramer</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Lauhghing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>Magazini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+    </tr>
+
+</table>
+in table we have something called vertical alignment.it is used to the text in th or td
+to top , middle , bottom.
+to create a responsive table by adding a scroll bar , you will wrap the table elment in a div , and give it a style of overflow-x:auto.
+you can give the caption of a table by making use of the caption-side element tag.
+<h4> the differnece between didplay:none and visibilty:hidden.</h4>
+<h5>display none disappears without leaving space that something is meant to be here , the latter disappearslaving the space of where it was meant to be.
+
+</h5>
+<h3>css position , we have 5</h3>
+<ol>
+    <li>fixed:A fixed element does not leave a gap in the page where it would normally have been located.</li>
+    <li>static:not affected by the top, bottom, left, and right properties.</li>
+    <li>relative:Other content will not be adjusted to fit into any gap left by the element.</li>
+    <li>absolute</li>
+    <li>sticky</li>
+</ol>
+z-index
+css overflow , it can be hidden , scroll , visible , auto , you can set for both y and x axis.
+<h4>how to use the clearfix hack.</h4>
+you use the clearfix hack when you have a floated element.
+example:
+<div class="nonclearfix">
+    <img class="img1" src="dad.png" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+  </div>
+  <div class="clearfix">
+    <img class="img2" src="dad.png" alt="Pineapple" width="570" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis officia officiis quo exercitationem quisquam nobis aliquid doloremque ratione excepturi labore, enim deserunt veritatis, tempora voluptas, beatae temporibus eligendi voluptates consectetur.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum quia, id cum nobis harum nesciunt impedit, alias debitis quo delectus in fugit quod obcaecati quam veritatis iure autem? Delectus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sint, ullam, quod consequatur soluta iusto possimus facere nisi libero pariatur, atque nihil aspernatur sit placeat accusamus magni neque laudantium vitae.
+  </div>
+  <h4>Css Combinators</h4>
+  we have 4:<br>
+  descendant selector (space)<br>...eg div p
+  
+<div class="space">
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
+  </div>
+  
+  <p>Paragraph 4. Not in a div.</p>
+  <p>Paragraph 5. Not in a div.</p>
+child selector (>)<br>eg
+<div class="child">
+<p>Paragraph 1 in the div.</p>
+<p>Paragraph 2 in the div.</p>
+<section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+<p>Paragraph 4 in the div.</p>
+</div>
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+adjacent sibling selector (+)<br>
+eg..
+<div class="adjacent">
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+  </div>
+  
+  <p>Paragraph 3. Not in a div.</p>
+  <p>Paragraph 4. Not in a div.</p>
+general sibling selector (~)<br>
+eg.
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+<h1>
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!
+ a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+</h1>
+more examples of pseudo class , :first-child,:first-of-type;last-of-type;last-child;not(selector);:nth-child(n);nth-last-child(n);nth-last-of-type(n)
+;nth-of-type(n);:only-of-type;:only-child
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+<form action="#">
+    <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+    First name: <input type="text" value="Mickey"><br>
+    Last name: <input type="text" value="Mouse"><br>
+    Country: <input type="text" disabled="disabled" value="Disneyland">
+    <input type="number" min="5" max="10" value="7">
+    <p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+<input type="number" min="5" max="10" value="17">
+<p>A normal input element:<br><input value="hello"></p>
+
+<p>A readonly input element:<br><input readonly value="hello"></p>
+the read-write selects element without the read only attribute
+
+a very interesting attribute , the target attribute.
+take a look <br>
+<h1>This is a heading</h1>
+
+<p><a href="#news1">Jump to New content 1</a></p>
+<p><a href="#news2">Jump to New content 2</a></p>
+
+<p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+<p id="news1"><b>New content 1...</b></p>
+<p id="news2"><b>New content 2...</b></p>
+input:valid , it is used when you have a fixed response.
+<input type="email" value="support@example.com">
+    </form>
+<h3>
+    The single-colon syntax was used for both pseudo-classes , and double is for pseudo-elements</h3>
+    <p class="first">You can combine the ::first-letter and ::first-line pseudo-elements
+         to add a special effect to the first letter and the first line of a text!</p>
+the ::selection 
+<h1>Select some text on this page:</h1>
+<h3>CSS dropdown</h3>
+
+<!-- <div class="dropdown">
+    <span>Mouse over me</span>
+    <div class="dropdown-content">
+    <p>Hello World!</p>
+    </div>
+  </div> -->
+
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+  </div>
+  <h3>CSS Gallery</h3>
+<div class="gallery">
+    <a href="#">
+        <img src="images/img_5terre.jpg" alt="5terrre">
+    </a>
+    <p>adding a description</p>
+</div>
+<div class="gallery">
+    <a href="#">
+        <img src="images/img_forest.jpg" alt="5terrre">
+    </a>
+    <p>adding a description</p>
+</div>
+<div class="gallery">
+    <a href="#">
+        <img src="images/img_lights.jpg" alt="5terrre">
+    </a>
+    <p>adding a description</p>
+</div>
+<div class="gallery">
+    <a href="#">
+        <img src="images/img_mountains.jpg" alt="5terrre">
+    </a>
+    <p>adding a description</p>
+</div>
+<h3>attr selectors</h3>
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word<br>
+The [attribute|="value"] selector is used to select elements with the specified attribute starting with the specified value.
+Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text"!<br>
+The [attribute^="value"] selector is used to select elements whose attribute value begins with a specified value.<br>
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.<br>
+The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.<br>
+input[type="text"] , when styling forms. input[type=text]:focus<br>
+textarea..resize: none;
+<h1>css counters for the lazy</h1>
+<h1>css units</h1>check more on it , nut em and rem are good , they are relative , cm ,px, ml,are absolute
+<h3>csss border radius</h3>
+Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, 
+second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner): <br>
+Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second 
+value applies to top-right and bottom-left corners, and third value applies to bottom-right corner):<br>
+
+Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners,
+ and the second value applies to top-right and bottom-left corners):<br>
+ One value - border-radius: 15px; the value applies to all four corners, which are rounded equally:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
