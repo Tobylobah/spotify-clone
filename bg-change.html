@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.color-change-container {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to top, #121212, var(--random-color));
+  transition: background 0.3s ease, opacity 0.3s ease;
+  opacity: 1; 
+}
+
+.color-change-container:hover {
+  background: linear-gradient(to top, #121212, var(--random-color));
+  opacity: 0.5; /* Change the initial opacity as desired */
+}
+
+  </style>
+</head>
+<body>
+  <div class="color-change-container"></div>
+
+</body>
+<script>
+  const container = document.querySelector('.color-change-container');
+const colors = ['red', 'red', 'red', 'red', 'red', 'red'];
+let colorIndex = 0;
+
+container.addEventListener('mouseover', () => {
+  container.style.setProperty('--random-color', colors[colorIndex]);
+  colorIndex = (colorIndex + 1) % colors.length;
+});
+
+</script>
+</html>

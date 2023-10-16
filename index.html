@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <div class="container">
     <div class="left-section">
@@ -29,18 +27,18 @@
         <div class="your-library-box">
           <div class="library-text">
             <ion-icon class="library-img" name="library-sharp"></ion-icon>
-            <p>Your Library</p>
+            <p>Your Library <span class="tooltip-text">Collapse your library</span></p>
           </div>
           <div class="library-icons">
             <ion-icon class="add" name="add"></ion-icon>
             <ion-icon class="arrow-forward" name="arrow-forward"></ion-icon>
           </div>
-        <!-----
+      
         <div class="option-box">
           <p>Playlist</p>
-          <p>Artists</p> nnjjjjjj
+          <p>Artists</p>
           <p>Podcasts & Shows</p>
-        </div>--->
+        </div>
       </div>
       <div class="content">
         <div class="last-box">
@@ -88,7 +86,10 @@
                 <div class="artist-name">
                   Billie Ellish
                 </div>
-                 
+                <div class="artist-title">
+                  <i class="fa fa-thumb-tack fa-rotate-180 fa-flip-horizontal" aria-hidden="true"></i>
+                  <span>Artist</span>
+                </div>
               </div>
             </div>
             <div class="artists">
@@ -189,29 +190,25 @@
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
-        <div class="custom-scrollbar">
-
         </div>
       </div>
     </div>
-    <div class="right-section">
+    <div class="right-section" id="rightSection">
       <nav id="nav" class="nav">
         <div class="prev-next">
           <div class="prev-icon">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
           </div>
           <div class="next-icon">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>  
           </div>
         </div>
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-      </div>
+        </div>
         <div class="explore">
           <button class="explore-btn">Explore Premium</button>
           <button class="install-btn"><i class="fa fa-download" aria-hidden="true"></i>Install App</button>
@@ -228,30 +225,34 @@
         <div class="collection">
           <img src="img/liked-songs.jpeg">
           <p>Liked Songs</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
         <div class="collection">
           <img src="img/nf.jpeg">
           <p>NF</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
         <div class="collection">
           <img src="img/burna.jpeg">
           <p>Daily Mix 1</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
         <div class="collection">
           <img src="img/maneskin.jpeg">
           <p>Maneskin</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
         <div class="collection">
           <img src="img/347aidanMix.jpeg">
           <p>347 Aidan</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
         <div class="collection">
           <img src="img/nf.jpeg">
           <p>NF</p>
+          <div class="play"><i class="fa fa-play" aria-hidden="true"></i></div>
         </div>
       </section>
-      
-      <div class="scroll-container">
       <section class="made-section">
         <div class="made">
           <h1>Made For Bello Lateefat</h1>
@@ -263,17 +264,20 @@
             <h4>Daily Mix2</h4>
             <p>NF, The Wanted,</p>
             <p> Flo Rida and more</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/dailymix3.jpeg">
             <h4>Daily Mix3</h4>
             <p>Doja Cat , Renee<br>
-              Rapp , Ed Sheeran a...
+              Rapp , Ed Sheeran a...</p>
+              <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/dailymix4.jpeg">
             <h4>Daily Mix4</h4>
             <p>girl in red, Imagine<br> Dragons, Train and more</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/dailymix5.jpeg">
@@ -285,10 +289,10 @@
             <h4>Daily Mix5</h4>
             <p>Doja Cat , Renee</p>
             <p>Rapp , Ed Sheeran a...</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
         </div>
       </section>
-      </div>
       <section class="made-section">
         <div class="made">
           <h1>Jump back in</h1>
@@ -298,19 +302,20 @@
           <div class="made-box">
             <img src="img/jump1.jpeg">
             <h4>Nicki Minaj Mix</h4>
-            <p>Flo Rida, Ariana Grande<br> and Saweetie</p>
-        
+            <p>Flo Rida, Ariana Grande<br> and Saweetie</p> 
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div> 
           </div>
           <div class="made-box">
             <img src="img/jump2.jpeg">
             <h4>Happier Than Ever</h4>
             <p>Billie Eillish<br>
-             
+              <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/jump3.jpeg">
             <h4>Daily Mix4</h4>
             <p>girl in red, Imagine<br> Dragons, Train and more</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/jump4.jpeg">
@@ -321,6 +326,7 @@
             <img src="img/jump5.jpg">
             <h4>NF Mix</h4>
             <p>Logic , Jon Bellion and<br> Eminem</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
         </div>
 
@@ -336,49 +342,57 @@
             <img src="img/recplay1.jpeg">
             <h4>Muslim songs</h4>
             <p>By Aleen4</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/recplay2.jpeg">
             <h4></h4>
             <p>Sia Mix<br>
-              Lewis Capaldi,<br>Rihanna and Imagi..
+              Lewis Capaldi,<br>Rihanna and Imagi..</p>
+              <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/recplay4.jpeg">
             <h4>Liked Songs</h4>
             <p>107 songs</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/recplay4.jpeg">
             <h4>Maneskin</h4>
             <p>Artist</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
           <div class="made-box">
             <img src="img/recplay5.jpeg">
             <h4>NF</h4>
             <p>Artist</p>
+            <div class="made-box-play"><i class="fa fa-play" aria-hidden="true"></i></div>
           </div>
         </div>
-
       </section>
-
-
     </div>
+  </div>
+  <div class="control-section">
+    
   </div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <script>
-    // const navbar = document.getElementById('nav');
+    //  function changeBackgroundColor() {
+    //         const container = document.getElementById('rightSection');
+    //         const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF"];
+    //         const randomIndex = Math.floor(Math.random() * colors.length);
+    //         const topColor = colors[randomIndex];
+    //         container.style.background = `linear-gradient(to bottom, ${topColor}, #121212)`;
+    //     }
 
-    // window.addEventListener('scroll', () => {
-    //   if (window.scrollY > 0) {
-    //     nav.classList.add('scrolled');
-    //   } else {
-    //     nav.classList.remove('scrolled');
-    //   }
-    // });
-        // script.js
+    //     setInterval(changeBackgroundColor, 5000);
+    //     changeBackgroundColor();
+
+
+
     
     document.addEventListener('DOMContentLoaded', function () {
         const toggleButton = document.querySelector('.navbar-toggle');
@@ -410,6 +424,14 @@ const navLinks = document.querySelector('.explore');
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
     burger.classList.toggle('active');
+});
+const container = document.querySelector('.right-section');
+const colors = ['red', 'red', 'red', 'red', 'red', 'red'];
+let colorIndex = 0;
+
+container.addEventListener('mouseover', () => {
+  container.style.setProperty('--random-color', colors[colorIndex]);
+  colorIndex = (colorIndex + 1) % colors.length;
 });
 
 
